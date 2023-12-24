@@ -16,19 +16,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: MyHomePage(),
+      home: ContainerScreen(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class ContainerScreen extends StatefulWidget {
+  const ContainerScreen({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<ContainerScreen> createState() => _ContainerScreenState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _ContainerScreenState extends State<ContainerScreen> {
   int _currentIndex = 0;
 
   static const List<Widget> _widgetOptions = <Widget>[
